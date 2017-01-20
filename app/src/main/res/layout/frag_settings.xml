@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="@dimen/activity_vertical_margin"
+              android:layout_marginEnd="@dimen/activity_horizontal_margin"
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+              android:layout_marginRight="@dimen/activity_horizontal_margin"
+              android:layout_marginStart="@dimen/activity_horizontal_margin"
+              android:layout_marginTop="@dimen/activity_vertical_margin"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/input_active_insulin_period"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/subhead_margin"/>
+
+    <include
+        layout="@layout/input_sensitivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/subhead_margin"/>
+
+    <TextView
+        android:id="@+id/text_title_basal_rate"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:text="@string/title_basal_rate"/>
+
+    <include
+        layout="@layout/input_basal_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/subhead_margin"/>
+
+    <TextView
+        android:id="@+id/text_title_carbohydrate_ratio"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:text="@string/title_carbohydrate_ratio"/>
+
+    <include
+        layout="@layout/input_carbohydrate_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/subhead_margin"/>
+</LinearLayout>

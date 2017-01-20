@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:id="@+id/text_title_blood_glucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_blood_glucose"/>
+
+    <EditText
+        android:layout_marginRight="@dimen/val_to_unit_margin"
+        android:layout_marginEnd="@dimen/val_to_unit_margin"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/edit_blood_glucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title_blood_glucose"
+        android:hint="123"
+        android:inputType="number"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/text_units_blood_glucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_blood_glucose"
+        android:layout_toRightOf="@+id/edit_blood_glucose"
+        android:text="@string/units_blood_glucose"/>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_title_active_insulin"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:text="@string/title_active_insulin"/>
+
+    <TextView
+        android:id="@+id/text_active_insulin"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title_active_insulin"
+        android:layout_marginEnd="@dimen/val_to_unit_margin"
+        android:layout_marginRight="@dimen/val_to_unit_margin"
+        android:text="0.00"/>
+
+    <TextView
+        android:id="@+id/text_units_insulin"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_active_insulin"
+        android:layout_toRightOf="@+id/text_active_insulin"
+        android:text="@string/units_insulin"/>
+</RelativeLayout>

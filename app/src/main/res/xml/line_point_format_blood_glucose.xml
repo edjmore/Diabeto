@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config
+    fillPaint.color="@color/transparent"
+    linePaint.color="@color/blood_glucose"
+    linePaint.strokeWidth="@dimen/line_width"
+    pointLabelFormatter.textPaint.color="@color/transparent"
+    vertexPaint.color="@color/blood_glucose"
+    vertexPaint.strokeWidth="@dimen/vertex_width"/>

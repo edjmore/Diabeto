@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/list_header_padding"
+                android:paddingEnd="@dimen/list_item_padding"
+                android:paddingLeft="@dimen/list_header_padding"
+                android:paddingRight="@dimen/list_item_padding"
+                android:paddingStart="@dimen/list_header_padding"
+                android:paddingTop="@dimen/list_header_padding">
+
+    <TextView
+        android:layout_marginLeft="@dimen/list_item_margin"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:id="@+id/text_header_date"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Thu, Jan 1, 1970"/>
+
+    <TextView
+        android:id="@+id/text_num_logs"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/text_units_num_logs"
+        android:layout_toStartOf="@+id/text_units_num_logs"
+        android:text="6"/>
+
+    <TextView
+        android:id="@+id/text_units_num_logs"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_num_logs"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/val_to_unit_margin"
+        android:text="@string/units_num_logs"/>
+</RelativeLayout>

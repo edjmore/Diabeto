@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/list_item_padding">
+
+    <!-- Timestamp -->
+    <TextView
+        android:layout_marginLeft="@dimen/list_item_margin"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:id="@+id/text_time"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="12:00 AM"/>
+
+    <!-- Blood glucose -->
+    <LinearLayout
+        android:id="@+id/layout_blood_glucose"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/list_item_margin"
+        android:layout_marginRight="@dimen/list_item_margin"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:layout_marginEnd="@dimen/list_item_margin"
+        android:layout_toLeftOf="@+id/layout_bolus"
+        android:layout_toStartOf="@+id/layout_bolus"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_blood_glucose"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_green"
+            android:gravity="center"
+            android:text="123"/>
+
+        <TextView
+            android:id="@+id/text_units_blood_glucose"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_blood_glucose"/>
+    </LinearLayout>
+
+    <!-- Bolus -->
+    <LinearLayout
+        android:id="@+id/layout_bolus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/list_item_margin"
+        android:layout_marginRight="@dimen/list_item_margin"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:layout_marginEnd="@dimen/list_item_margin"
+        android:layout_toLeftOf="@+id/layout_carbohydrate"
+        android:layout_toStartOf="@+id/layout_carbohydrate"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_bolus"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="6.9"/>
+
+        <TextView
+            android:id="@+id/text_units_insulin"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_insulin"/>
+    </LinearLayout>
+
+    <!-- Carbohydrate -->
+    <LinearLayout
+        android:id="@+id/layout_carbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_carbohydrate"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="42"/>
+
+        <TextView
+            android:id="@+id/text_units_carbohydrate"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/units_carbohydrate"/>
+    </LinearLayout>
+</RelativeLayout>

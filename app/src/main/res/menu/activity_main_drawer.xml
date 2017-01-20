@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logs"
+            android:icon="@drawable/ic_assignment_black"
+            android:title="@string/title_logs"/>
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_today_black"
+            android:title="@string/title_status"/>
+        <item
+            android:id="@+id/nav_analytics"
+            android:icon="@drawable/ic_poll_black"
+            android:title="@string/title_analytics"/>
+        <item
+            android:id="@+id/nav_predictive"
+            android:icon="@drawable/ic_face_black"
+            android:title="@string/title_predictive"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black"
+            android:title="@string/title_settings"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_export"
+                android:icon="@drawable/ic_share_black"
+                android:title="@string/title_export"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">diabeto</string>
+    <string name="dev_email">ejmoore2@illinois.edu</string>
+
+    <!-- Titles -->
+    <string name="title_blood_glucose">Blood glucose:</string>
+    <string name="title_bolus">Bolus:</string>
+    <string name="title_carbohydrate">Carbohydrate:</string>
+    <string name="title_todays_average_blood_glucose">Today\'s average blood glucose:</string>
+    <string name="title_std_dev">Std dev:</string>
+    <string name="title_min">Min:</string>
+    <string name="title_max">Max:</string>
+    <string name="title_range">Range:</string>
+    <!-- Settings -->
+    <string name="title_sensitivity">Sensitivity:</string>
+    <string name="title_active_insulin">Active insulin:</string>
+    <string name="title_carbohydrate_ratio">Carbohydrate ratio:</string>
+    <string name="title_basal_rate">Basal rate:</string>
+    <!-- Navigation drawer -->
+    <string name="title_logs">Logs</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_status">Status</string>
+    <string name="title_analytics">Analytics</string>
+    <string name="title_predictive">diabeto.ai</string>
+    <string name="title_export">Export</string>
+    <!-- Activities -->
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_log_input">Log input</string>
+    <string name="title_activity_view_log_entry">View log entry</string>
+    <!-- Analytics -->
+    <string name="title_hba1c">Hba1c:</string>
+    <string name="title_avg_daily_carb">Avg. Daily Carbohydrate Intake:</string>
+    <string name="title_avg_daily_bolus">Avg. Daily Bolus Dosage:</string>
+
+    <!-- Units -->
+    <string name="units_blood_glucose">mg/dL</string>
+    <string name="units_insulin">units</string>
+    <string name="units_carbohydrate">grams</string>
+    <string name="units_active_insulin_period">hours</string>
+    <string name="units_sensitivity">mg/dL/unit</string>
+    <string name="units_basal_rate">units/hour</string>
+    <string name="units_carbohydrate_ratio">grams/unit</string>
+    <string name="units_num_logs">logs</string>
+    <string name="units_hba1c">%</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Action items -->
+    <string name="action_settings">Settings</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Buttons -->
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">Ok</string>
+
+    <!-- Snackbars -->
+    <string name="log_entry_cancelled">Log entry cancelled</string>
+    <string name="log_entry_confirmed">Log entry added!</string>
+    <string name="log_entry_updated">Changes saved!</string>
+    <string name="log_entry_edit_cancelled">Log entry unchanged</string>
+    <string name="log_entry_deleted">Log entry deleted</string>
+    <string name="settings_saved">Settings saved!</string>
+
+    <!-- Preferences -->
+    <string name="prefs_file">diabeto_prefs</string>
+    <!-- Keys -->
+    <string name="key_active_insulin">key_active_insulin</string>
+    <string name="key_sensitivity">key_sensitivity</string>
+    <string name="key_basal_rate">key_basal_rate</string>
+    <string name="key_carbohydrate_ratio">key_carbohydrate_ratio</string>
+    <!-- Summaries -->
+    <string name="summary_active_insulin">Hours insulin should be considered active after entering the bloodstream.</string>
+    <string name="summary_sensitivity">Blood glucose level sensitivity to insulin.</string>
+    <string name="summary_basal_rate">Constant background insulin dosage (hourly).</string>
+    <string name="summary_carbohydrate_ratio">Units of insulin needed per grams of carbohydrate.</string>
+</resources>

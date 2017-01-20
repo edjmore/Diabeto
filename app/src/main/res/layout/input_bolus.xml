@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:id="@+id/text_title_bolus"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_bolus"/>
+
+    <EditText
+        android:layout_marginRight="@dimen/val_to_unit_margin"
+        android:layout_marginEnd="@dimen/val_to_unit_margin"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/edit_bolus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title_bolus"
+        android:hint="6.9"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:id="@+id/text_units_insulin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_bolus"
+        android:layout_toRightOf="@+id/edit_bolus"
+        android:text="@string/units_insulin"/>
+</RelativeLayout>

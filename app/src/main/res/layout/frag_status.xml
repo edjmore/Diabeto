@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <!-- Average blood sugar for today -->
+    <TextView
+        android:id="@+id/text_title_average_blood_glucose"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:text="@string/title_todays_average_blood_glucose"/>
+
+    <TextView
+        android:id="@+id/text_average_blood_glucose"
+        style="@style/TextAppearance.AppCompat.Display3"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_below="@+id/text_title_average_blood_glucose"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_green"
+        android:gravity="center"
+        android:text="000.0"/>
+
+    <TextView
+        android:id="@+id/text_units_blood_glucose"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_average_blood_glucose"
+        android:layout_marginLeft="@dimen/val_to_unit_margin"
+        android:layout_toEndOf="@+id/text_average_blood_glucose"
+        android:layout_toRightOf="@+id/text_average_blood_glucose"
+        android:text="@string/units_blood_glucose"/>
+
+    <!-- Blood glucose std. deviation -->
+    <RelativeLayout
+        android:id="@+id/layout_std_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_average_blood_glucose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_to_val_margin">
+
+        <TextView
+            android:id="@+id/text_title_std_dev"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/title_to_val_margin"
+            android:text="@string/title_std_dev"/>
+
+        <TextView
+            android:id="@+id/text_std_dev_blood_glucose"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_title_std_dev"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/text_title_std_dev"
+            android:layout_toRightOf="@+id/text_title_std_dev"
+            android:text="70"/>
+
+        <TextView
+            android:id="@id/text_units_blood_glucose"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_std_dev_blood_glucose"
+            android:layout_marginLeft="@dimen/val_to_unit_margin"
+            android:layout_toEndOf="@+id/text_std_dev_blood_glucose"
+            android:layout_toRightOf="@+id/text_std_dev_blood_glucose"
+            android:text="@string/units_blood_glucose"/>
+    </RelativeLayout>
+
+    <!-- Blood glucose range -->
+    <RelativeLayout
+        android:id="@+id/layout_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_std_dev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_to_val_margin">
+
+        <!-- Min -->
+        <TextView
+            android:id="@+id/text_title_range"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/title_to_val_margin"
+            android:text="@string/title_range"/>
+
+
+        <TextView
+            android:id="@+id/text_range_blood_glucose"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_title_range"
+            android:layout_toEndOf="@+id/text_title_range"
+            android:layout_toRightOf="@+id/text_title_range"
+            android:text="42 - 420"/>
+
+        <TextView
+            android:id="@id/text_units_blood_glucose"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_range_blood_glucose"
+            android:layout_marginLeft="@dimen/val_to_unit_margin"
+            android:layout_toEndOf="@+id/text_range_blood_glucose"
+            android:layout_toRightOf="@+id/text_range_blood_glucose"
+            android:text="@string/units_blood_glucose"/>
+    </RelativeLayout>
+
+    <!-- Active insulin -->
+    <include
+        android:id="@+id/layout_active_insulin"
+        layout="@layout/view_active_insulin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_range"
+        android:layout_marginBottom="@dimen/subhead_margin"
+        android:layout_marginTop="@dimen/subhead_margin"/>
+
+    <!-- Current basal rate -->
+    <TextView
+        android:id="@+id/text_title_basal_rate"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_active_insulin"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:layout_marginRight="@dimen/title_to_val_margin"
+        android:text="@string/title_basal_rate"/>
+
+    <TextView
+        android:id="@+id/text_basal_rate"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_title_basal_rate"
+        android:layout_marginEnd="@dimen/val_to_unit_margin"
+        android:layout_marginRight="@dimen/val_to_unit_margin"
+        android:layout_toEndOf="@+id/text_title_basal_rate"
+        android:layout_toRightOf="@+id/text_title_basal_rate"
+        android:text="0.00"/>
+
+    <TextView
+        android:id="@+id/text_units_basal_rate"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_basal_rate"
+        android:layout_toEndOf="@+id/text_basal_rate"
+        android:layout_toRightOf="@+id/text_basal_rate"
+        android:text="@string/units_basal_rate"/>
+
+    <!-- Current carbohydrate ratio -->
+    <TextView
+        android:id="@+id/text_title_carbohydrate_ratio"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title_basal_rate"
+        android:layout_marginBottom="@dimen/title_to_val_margin"
+        android:layout_marginRight="@dimen/title_to_val_margin"
+        android:layout_marginTop="@dimen/subhead_margin"
+        android:text="@string/title_carbohydrate_ratio"/>
+
+    <TextView
+        android:id="@+id/text_carbohydrate_ratio"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_title_carbohydrate_ratio"
+        android:layout_marginEnd="@dimen/val_to_unit_margin"
+        android:layout_marginRight="@dimen/val_to_unit_margin"
+        android:layout_toEndOf="@+id/text_title_carbohydrate_ratio"
+        android:layout_toRightOf="@+id/text_title_carbohydrate_ratio"
+        android:text="0.00"/>
+
+    <TextView
+        android:id="@+id/text_units_carbohydrate_ratio"
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_carbohydrate_ratio"
+        android:layout_toEndOf="@+id/text_carbohydrate_ratio"
+        android:layout_toRightOf="@+id/text_carbohydrate_ratio"
+        android:text="@string/units_carbohydrate_ratio"/>
+</RelativeLayout>

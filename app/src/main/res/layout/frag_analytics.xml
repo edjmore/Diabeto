@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="@dimen/activity_vertical_margin"
+              android:layout_marginEnd="@dimen/activity_horizontal_margin"
+              android:layout_marginLeft="@dimen/activity_horizontal_margin"
+              android:layout_marginRight="@dimen/activity_horizontal_margin"
+              android:layout_marginStart="@dimen/activity_horizontal_margin"
+              android:layout_marginTop="@dimen/activity_vertical_margin"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_hba1c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/merge_title_val_unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_avg_daily_carb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/merge_title_val_unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_avg_daily_bolus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/merge_title_val_unit"/>
+    </LinearLayout>
+</LinearLayout>

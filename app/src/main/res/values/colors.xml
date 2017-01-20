@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#295D6E</color>
+    <color name="colorPrimaryDark">#073B4C</color>
+    <color name="colorAccent">#06D6A0</color>
+
+    <color name="blood_glucose">#EF476F</color>
+    <color name="bolus">#118AB2</color>
+    <color name="carbohydrate">#FFD166</color>
+
+    <color name="yellow">#FDE74C</color>
+    <color name="blue">#5BC0EB</color>
+    <color name="green">#9BC53D</color>
+    <color name="red">#E55934</color>
+    <color name="orange">#FA7921</color>
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>
